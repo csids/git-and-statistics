@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Git and Statistics",
+    "section": "",
+    "text": "Git and Statistics"
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Git and Statistics",
+    "section": "License",
+    "text": "License\n\nThis work, as a whole, is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.\nThe code contained in this book is simultaneously available under the MIT license."
+  },
+  {
+    "objectID": "qmd/100-reference.html",
+    "href": "qmd/100-reference.html",
+    "title": "1  Reference",
+    "section": "",
+    "text": "Git: A distributed version control system, designed to handle collaborative coding projects. A program that is installed on your computer.\nGitHub: A cloud-based hosting service that lets you manage Git repositories.\nRepo/Repository: A top-level directory that has files tracked by Git is syncronized to GitHub. This directory is access controlled.\nLocal repo: The folders that are on your computer and are tracked by Git, which you will make changes to.\nRemote repo: The centralized repository\nGit\n[Commit]\n[Pull]\n[Push]\n[SSH Key]"
+  }
+]
