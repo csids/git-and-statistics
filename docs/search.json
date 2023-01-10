@@ -81,6 +81,13 @@
     "href": "qmd/300-starting-with-git.html#create-an-account",
     "title": "3  Starting With Git",
     "section": "3.1 Create an Account",
-    "text": "3.1 Create an Account\nYou will need an account on your remote Git server.\nDo this via: https://github.com/join\n\n\n\n\n\n\nIf your team has a GitHub Organization\n\n\n\nYou will need to provide your team’s administrator with your GitHub username so that they can add you to the GitHub Organization."
+    "text": "3.1 Create an Account\nYou will need an account on your remote Git server.\nDo this https://github.com/join.\n\n\n\n\n\n\nIf your team has a GitHub Organization\n\n\n\nYou will need to provide your team’s administrator with your GitHub username so that they can add you to their GitHub Organization."
+  },
+  {
+    "objectID": "qmd/300-starting-with-git.html#github-desktop",
+    "href": "qmd/300-starting-with-git.html#github-desktop",
+    "title": "3  Starting With Git",
+    "section": "3.2 GitHub Desktop",
+    "text": "3.2 GitHub Desktop\n\n3.2.1 Initial Setup\n\nDownload https://desktop.github.com.\nhttps://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github.\n\n\n\n3.2.2 Cloning a repository\n\n\n\n3.2.3 How to push commits to GitHub\n\nhttps://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github\n(You can ignore step 3, “Create Pull Request”, because we are only working on the ‘main’ branch)\n\n\n\n3.2.4 How to pull updates from GitHub:\n\nhttps://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch#pulling-to-your-local-branch-from-the-remote\n(Remember that we are only using the ‘main’ branch)"
   }
 ]
