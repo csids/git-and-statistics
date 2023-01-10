@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Git and Statistics",
+    "section": "",
+    "text": "Git and Statistics"
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Git and Statistics",
+    "section": "License",
+    "text": "License\n\nThis work, as a whole, is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.\nThe code contained in this book is simultaneously available under the MIT license."
+  },
+  {
+    "objectID": "qmd/100-reference.html",
+    "href": "qmd/100-reference.html",
+    "title": "1  Reference",
+    "section": "",
+    "text": "Note\n\n\n\nThink of GitHub as a manual snapshot-oriented version of a cloud storage service (e.g. Box/Dropbox) that has been designed around collaborative coding.\n\n\n\nWorking directory\n\nThis is a folder on your local file system. It contains the files that you interact with (i.e. edit, read, and run).\n\nGit\n\nA distributed version control system, designed to handle collaborative coding projects. A program that is installed on your computer.\n\nGitHub\n\nA cloud-based hosting service that lets you manage Git repositories.\n\nCommit\n\nA snapshot of the files at one particular point in time.\n\nRepo/Repository\n\nA list of commits. Multiple files and their revision history. A top-level directory that has files monitored by Git is syncronized to GitHub. This directory is access controlled.\n\nLocal repo\n\nThe list of commits on your computer. You can make changes to files, commit them, and then add these commits to your local repo.\n\nRemote repo\n\nThe centralized repository. Access controlled.\n\nBranch\n\nA parallel version of a repository. “main” is generally the default branch.\n\nPull\n\nFetch new commits from the remote repo and apply/merge them to your local repo.\n\nPush\n\nSend your commits to the remote repo.\n\nSSH Key\n\nA replacement for a username/password combination, in authenticating you to a server."
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#why-gitgithub",
+    "href": "qmd/200-git-concepts.html#why-gitgithub",
+    "title": "2  Git Concepts",
+    "section": "2.1 Why Git/GitHub?",
+    "text": "2.1 Why Git/GitHub?\nGitHub repos are used to store the code/scripts for projects.\nWhy do we want to use GitHub instead of a traditional cloud storage service? Because it is specifically designed for collaborative coding. In more concrete terms, this means:\n\nIt allows us to easily collaborate on code together.\n\nTraditional cloud storage services push all changes instantaneously. This has a tendency to break code.\n\nConflicts are handled in a well-defined manner that makes sense for code.\n\nTraditional cloud storage services do not handle this as well — they just save both files side-by-side.\n\nIt allows for the retrieval of earlier versions of code.\nCan easily check how each file/line of code has developed over time.\n\nTraditional cloud storage services have limited versioning options.\n\nIt provides a secure remote storage space for the code, in case of laptop theft/damage.\n\nSame as traditional cloud storage services.\n\nAccess rights can be centrally controlled on a per-project basis.\n\nIf working within a GitHub organization, then access rights should be given via teams."
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#clone",
+    "href": "qmd/200-git-concepts.html#clone",
+    "title": "2  Git Concepts",
+    "section": "2.2 Clone",
+    "text": "2.2 Clone\nThe clone command is used to create a copy of a remote GitHub repo on your local computer (i.e. the initialization of the link between local and remote). This only has to happen once per repo/computer.\ngit clone git@github.com:csids/org.git"
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#working-directory",
+    "href": "qmd/200-git-concepts.html#working-directory",
+    "title": "2  Git Concepts",
+    "section": "2.3 Working directory",
+    "text": "2.3 Working directory\nThis is a folder on your local file system. It contains the files that you interact with (i.e. edit, read, and run)."
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#commit",
+    "href": "qmd/200-git-concepts.html#commit",
+    "title": "2  Git Concepts",
+    "section": "2.4 Commit",
+    "text": "2.4 Commit\nA commit is a saved snapshot of your repo at one particular point in time. You may choose to do this when you would like to either update the remote GitHub repo with your local code, or when you would like to sync your local code with updates from the remote GitHub repo.\n\n\n\n\n\n\nNote\n\n\n\nRemember that you can only commit files that have been staged (i.e. via the git add command)\n\n\ngit commit -m \"Commit message\""
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#add-staging",
+    "href": "qmd/200-git-concepts.html#add-staging",
+    "title": "2  Git Concepts",
+    "section": "2.5 Add (Staging)",
+    "text": "2.5 Add (Staging)\nThe staging area lies between the working directory and the commit.\nIt is not"
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#push",
+    "href": "qmd/200-git-concepts.html#push",
+    "title": "2  Git Concepts",
+    "section": "2.6 Push",
+    "text": "2.6 Push\nYou update the GitHub repo by pushing your commit to the repo."
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#pull",
+    "href": "qmd/200-git-concepts.html#pull",
+    "title": "2  Git Concepts",
+    "section": "2.7 Pull",
+    "text": "2.7 Pull\nYou update your local copy by pulling new commits from the GitHub repo (also known as syncing)"
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#branches",
+    "href": "qmd/200-git-concepts.html#branches",
+    "title": "2  Git Concepts",
+    "section": "2.8 Branches",
+    "text": "2.8 Branches\nBranches allow for multiple versions of your repo to exist simultaneously. For our purposes, we will ignore them, with the knowledge that everything we do will be on the ‘main’ branch."
+  }
+]
