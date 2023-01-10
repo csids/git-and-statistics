@@ -206,11 +206,11 @@ background: #b8e2f2;
   <ul>
   <li><a href="#why-gitgithub" id="toc-why-gitgithub" class="nav-link active" data-scroll-target="#why-gitgithub"><span class="toc-section-number">2.1</span>  Why Git/GitHub?</a></li>
   <li><a href="#clone" id="toc-clone" class="nav-link" data-scroll-target="#clone"><span class="toc-section-number">2.2</span>  Clone</a></li>
-  <li><a href="#working-directory" id="toc-working-directory" class="nav-link" data-scroll-target="#working-directory"><span class="toc-section-number">2.3</span>  Working directory</a></li>
+  <li><a href="#working-directory" id="toc-working-directory" class="nav-link" data-scroll-target="#working-directory"><span class="toc-section-number">2.3</span>  Working Directory</a></li>
   <li><a href="#commit" id="toc-commit" class="nav-link" data-scroll-target="#commit"><span class="toc-section-number">2.4</span>  Commit</a></li>
   <li><a href="#add-staging" id="toc-add-staging" class="nav-link" data-scroll-target="#add-staging"><span class="toc-section-number">2.5</span>  Add (Staging)</a></li>
-  <li><a href="#push" id="toc-push" class="nav-link" data-scroll-target="#push"><span class="toc-section-number">2.6</span>  Push</a></li>
-  <li><a href="#pull" id="toc-pull" class="nav-link" data-scroll-target="#pull"><span class="toc-section-number">2.7</span>  Pull</a></li>
+  <li><a href="#sec-push" id="toc-sec-push" class="nav-link" data-scroll-target="#sec-push"><span class="toc-section-number">2.6</span>  Push</a></li>
+  <li><a href="#sec-pull" id="toc-sec-pull" class="nav-link" data-scroll-target="#sec-pull"><span class="toc-section-number">2.7</span>  Pull</a></li>
   <li><a href="#branches" id="toc-branches" class="nav-link" data-scroll-target="#branches"><span class="toc-section-number">2.8</span>  Branches</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/csids/git-and-statistics/edit/main/qmd/200-git-concepts.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/csids/git-and-statistics/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -269,12 +269,17 @@ Note
 <div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>git clone git@github.com:csids/org.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="working-directory" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="working-directory"><span class="header-section-number">2.3</span> Working directory</h2>
+<h2 data-number="2.3" class="anchored" data-anchor-id="working-directory"><span class="header-section-number">2.3</span> Working Directory</h2>
 <p>This is a folder on your local file system. It contains the files that you interact with (i.e.&nbsp;edit, read, and run).</p>
 </section>
 <section id="commit" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="commit"><span class="header-section-number">2.4</span> Commit</h2>
-<p>A commit is a saved snapshot of your repo at one particular point in time. You may choose to do this when you would like to either update the remote GitHub repo with your local code, or when you would like to sync your local code with updates from the remote GitHub repo.</p>
+<p>A commit is a saved snapshot of your repo at one particular point in time.</p>
+<p>You may choose to bundle multiple files into a single commit when:</p>
+<ul>
+<li>You would like to update the remote GitHub repo with your local changes. See <a href="#sec-push"><span>Section&nbsp;2.6</span></a> for additional discussion.</li>
+<li>When you would like to update your local files with changes from the remote GitHub repo. See <a href="#sec-pull"><span>Section&nbsp;2.7</span></a> for additional discussion.</li>
+</ul>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -293,14 +298,14 @@ Note
 <section id="add-staging" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="add-staging"><span class="header-section-number">2.5</span> Add (Staging)</h2>
 <p>The staging area lies between the working directory and the commit.</p>
-<p>It is not</p>
+<p>Often,</p>
 </section>
-<section id="push" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="push"><span class="header-section-number">2.6</span> Push</h2>
+<section id="sec-push" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="sec-push"><span class="header-section-number">2.6</span> Push</h2>
 <p>You update the GitHub repo by pushing your commit to the repo.</p>
 </section>
-<section id="pull" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="pull"><span class="header-section-number">2.7</span> Pull</h2>
+<section id="sec-pull" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="sec-pull"><span class="header-section-number">2.7</span> Pull</h2>
 <p>You update your local copy by pulling new commits from the GitHub repo (also known as syncing)</p>
 </section>
 <section id="branches" class="level2" data-number="2.8">
