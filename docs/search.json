@@ -18,28 +18,28 @@
     "href": "qmd/100-reference.html",
     "title": "1  Reference",
     "section": "",
-    "text": "Note\n\n\n\nThink of GitHub as a manual snapshot-oriented version of a cloud storage service (e.g. Box/Dropbox) that has been designed around collaborative coding.\n\n\n\n\nGit: A distributed version control system, designed to handle collaborative coding projects. A program that is installed on your computer.\nGitHub: A cloud-based hosting service that lets you manage Git repositories.\nRepo/Repository: A top-level directory that has files tracked by Git is syncronized to GitHub. This directory is access controlled.\nLocal repo: The folders that are on your computer and are tracked by Git, which you will make changes to.\nRemote repo: The centralized repository\nBranch: A parallel version of a repository. “main” is generally the default branch.\nCommit: A snapshot of the files at one particular point in time.\nPull: Fetch new changes from the remote repo and apply/merge them to your local repo.\nPush: Send your commits to the remote repo.\nSSH Key: A replacement for a username/password combination, in authenticating you to a server."
+    "text": "Note\n\n\n\nThink of GitHub as a manual snapshot-oriented version of a cloud storage service (e.g. Box/Dropbox) that has been designed around collaborative coding.\n\n\n\nGit\n\nA distributed version control system, designed to handle collaborative coding projects. A program that is installed on your computer.\n\nGitHub\n\nA cloud-based hosting service that lets you manage Git repositories.\n\nRepo/Repository\n\nA top-level directory that has files tracked by Git is syncronized to GitHub. This directory is access controlled.\n\nLocal repo\n\nThe folders that are on your computer and are tracked by Git, which you will make changes to.\n\nRemote repo\n\nThe centralized repository\n\nBranch\n\nA parallel version of a repository. “main” is generally the default branch.\n\nCommit\n\nA snapshot of the files at one particular point in time.\n\nPull\n\nFetch new changes from the remote repo and apply/merge them to your local repo.\n\nPush\n\nSend your commits to the remote repo.\n\nSSH Key\n\nA replacement for a username/password combination, in authenticating you to a server."
   },
   {
     "objectID": "qmd/200-git-concepts.html#why-gitgithub",
     "href": "qmd/200-git-concepts.html#why-gitgithub",
     "title": "2  Git Concepts",
     "section": "2.1 Why Git/GitHub?",
-    "text": "2.1 Why Git/GitHub?\nGitHub repos are used to store the code/scripts for projects.\n\n\n\n\n\n\nNote\n\n\n\nThink of GitHub as a manual snapshot-oriented version of a cloud storage service (e.g. Box/Dropbox) that has been designed around collaborative coding.\n\n\nWhy do we want to use GitHub instead of a traditional cloud storage service? Because it is specifically designed for collaborative coding. In more concrete terms, this means:\n\nIt allows us to easily collaborate on code together.\n\nTraditional cloud storage services push all changes instantaneously. This has a tendency to break code.\n\nConflicts are handled in a well-defined manner that makes sense for code.\n\nTraditional cloud storage services do not handle this as well — they just save both files side-by-side.\n\nIt allows for the retrieval of earlier versions of code.\nCan easily check how each file/line of code has developed over time.\n\nTraditional cloud storage services have limited versioning options.\n\nIt provides a secure remote storage space for the code, in case of laptop theft/damage.\n\nSame as traditional cloud storage services.\n\nAccess rights can be centrally controlled on a per-project basis.\n\nIf working within a GitHub organization, then access rights should be given via teams."
+    "text": "2.1 Why Git/GitHub?\nGitHub repos are used to store the code/scripts for projects.\nWhy do we want to use GitHub instead of a traditional cloud storage service? Because it is specifically designed for collaborative coding. In more concrete terms, this means:\n\nIt allows us to easily collaborate on code together.\n\nTraditional cloud storage services push all changes instantaneously. This has a tendency to break code.\n\nConflicts are handled in a well-defined manner that makes sense for code.\n\nTraditional cloud storage services do not handle this as well — they just save both files side-by-side.\n\nIt allows for the retrieval of earlier versions of code.\nCan easily check how each file/line of code has developed over time.\n\nTraditional cloud storage services have limited versioning options.\n\nIt provides a secure remote storage space for the code, in case of laptop theft/damage.\n\nSame as traditional cloud storage services.\n\nAccess rights can be centrally controlled on a per-project basis.\n\nIf working within a GitHub organization, then access rights should be given via teams."
   },
   {
     "objectID": "qmd/200-git-concepts.html#clone",
     "href": "qmd/200-git-concepts.html#clone",
     "title": "2  Git Concepts",
     "section": "2.2 Clone",
-    "text": "2.2 Clone\nThe clone command is used to create a copy of a GitHub repo on your local computer. This only has to happen once per repo/computer."
+    "text": "2.2 Clone\nThe clone command is used to create a copy of a GitHub repo on your local computer (i.e. the initialization of the link between local and remote). This only has to happen once per repo/computer.\ngit clone git@github.com:csids/org.git"
   },
   {
     "objectID": "qmd/200-git-concepts.html#commit",
     "href": "qmd/200-git-concepts.html#commit",
     "title": "2  Git Concepts",
     "section": "2.3 Commit",
-    "text": "2.3 Commit\nA commit is a saved snapshot of your repo. You choose to do this when you would like to either update the remote GitHub repo with your local code, or when you would like to sync your local code with updates from the remote GitHub repo."
+    "text": "2.3 Commit\nA commit is a saved snapshot of your repo at one particular point in time. You choose to do this when you would like to either update the remote GitHub repo with your local code, or when you would like to sync your local code with updates from the remote GitHub repo."
   },
   {
     "objectID": "qmd/200-git-concepts.html#push",

@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -157,9 +220,6 @@ background: #b8e2f2;
 
 
 <p><img src="./resources/git-stages.png" class="img-fluid"></p>
-<section id="why-gitgithub" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="why-gitgithub"><span class="header-section-number">2.1</span> Why Git/GitHub?</h2>
-<p><a href="https://www.github.com">GitHub</a> <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">repos</a> are used to store the code/scripts for projects.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -173,6 +233,9 @@ Note
 <p>Think of GitHub as a manual snapshot-oriented version of a cloud storage service (e.g.&nbsp;Box/Dropbox) that has been designed around collaborative coding.</p>
 </div>
 </div>
+<section id="why-gitgithub" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="why-gitgithub"><span class="header-section-number">2.1</span> Why Git/GitHub?</h2>
+<p><a href="https://www.github.com">GitHub</a> <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">repos</a> are used to store the code/scripts for projects.</p>
 <p>Why do we want to use GitHub instead of a traditional cloud storage service? Because it is specifically designed for collaborative coding. In more concrete terms, this means:</p>
 <ul>
 <li>It allows us to easily collaborate on code together.
@@ -200,11 +263,12 @@ Note
 </section>
 <section id="clone" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="clone"><span class="header-section-number">2.2</span> Clone</h2>
-<p>The clone command is used to create a copy of a GitHub repo on your local computer. This only has to happen once per repo/computer.</p>
+<p>The clone command is used to create a copy of a GitHub repo on your local computer (i.e.&nbsp;the initialization of the link between local and remote). This only has to happen once per repo/computer.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>git clone git@github.com:csids/org.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="commit" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="commit"><span class="header-section-number">2.3</span> Commit</h2>
-<p>A commit is a saved snapshot of your repo. You choose to do this when you would like to either update the remote GitHub repo with your local code, or when you would like to sync your local code with updates from the remote GitHub repo.</p>
+<p>A commit is a saved snapshot of your repo at one particular point in time. You choose to do this when you would like to either update the remote GitHub repo with your local code, or when you would like to sync your local code with updates from the remote GitHub repo.</p>
 </section>
 <section id="push" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="push"><span class="header-section-number">2.4</span> Push</h2>
