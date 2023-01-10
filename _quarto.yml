@@ -1,0 +1,26 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Git and Statistics"
+  author: "Richard Aubrey White"
+  page-footer: |
+      Written by <a href="https://www.rwhite.no">Richard Aubrey White</a>.
+  repo-url: https://github.com/csids/git-and-statistics
+  repo-branch: main
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    - qmd/100-reference.qmd
+    - qmd/200-git-concepts.qmd
+
+format:
+  html:
+    theme: journal
+    # css: styles.css
+    title-block-banner: "#b8e2f2"
+    title-block-banner-color: "#000000"
+
+
+
