@@ -18,6 +18,48 @@
     "href": "qmd/100-reference.html",
     "title": "1  Reference",
     "section": "",
-    "text": "Git: A distributed version control system, designed to handle collaborative coding projects. A program that is installed on your computer.\nGitHub: A cloud-based hosting service that lets you manage Git repositories.\nRepo/Repository: A top-level directory that has files tracked by Git is syncronized to GitHub. This directory is access controlled.\nLocal repo: The folders that are on your computer and are tracked by Git, which you will make changes to.\nRemote repo: The centralized repository\nGit\n[Commit]\n[Pull]\n[Push]\n[SSH Key]"
+    "text": "Git: A distributed version control system, designed to handle collaborative coding projects. A program that is installed on your computer.\nGitHub: A cloud-based hosting service that lets you manage Git repositories.\nRepo/Repository: A top-level directory that has files tracked by Git is syncronized to GitHub. This directory is access controlled.\nLocal repo: The folders that are on your computer and are tracked by Git, which you will make changes to.\nRemote repo: The centralized repository\nBranch: A parallel version of a repository. “main” is generally the default branch.\nCommit: A snapshot of the files at one particular point in time.\nPull: Fetch new changes from the remote repo and apply/merge them to your local repo.\nPush: Send your commits to the remote repo.\nSSH Key: A replacement for a username/password combination, in authenticating you to a server."
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#why-gitgithub",
+    "href": "qmd/200-git-concepts.html#why-gitgithub",
+    "title": "2  Git Concepts",
+    "section": "2.1 Why Git/GitHub?",
+    "text": "2.1 Why Git/GitHub?\nGitHub repos are used to store the code/scripts for projects.\n\n\n\n\n\n\nNote\n\n\n\nThink of GitHub as a manual snapshot-oriented version of Box/Dropbox that has been designed around collaborative coding.\n\n\nWhy do we want to use GitHub instead of Box/Dropbox? Because it is specifically designed for collaborative coding. In more concrete terms, this means:\n\nIt allows us to easily collaborate on code together.\nConflicts are handled in a well-defined manner that makes sense for code.\n\nBox/Dropbox do not handle this as well — they just save both files side-by-side.\n\nIt allows for the retrieval of earlier versions of code.\nCan easily check how each file/line of code has developed over time.\n\nBox/Dropbox have limited versioning options.\n\nIt provides a secure remote storage space for the code, in case of laptop theft/damage.\n\nSame as Box/Dropbox\n\nAccess rights can be centrally controlled on a per-project basis.\n\nIf working within a GitHub organization, then access rights should be given via teams."
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#clone",
+    "href": "qmd/200-git-concepts.html#clone",
+    "title": "2  Git Concepts",
+    "section": "2.2 Clone",
+    "text": "2.2 Clone\nThe clone command is used to create a copy of a GitHub repo on your local computer. This only has to happen once per repo/computer."
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#commit",
+    "href": "qmd/200-git-concepts.html#commit",
+    "title": "2  Git Concepts",
+    "section": "2.3 Commit",
+    "text": "2.3 Commit\nA commit is a saved snapshot of your repo. You choose to do this when you would like to either update the remote GitHub repo with your local code, or when you would like to sync your local code with updates from the remote GitHub repo."
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#push",
+    "href": "qmd/200-git-concepts.html#push",
+    "title": "2  Git Concepts",
+    "section": "2.4 Push",
+    "text": "2.4 Push\nYou update the GitHub repo by pushing your commit to the repo."
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#pull",
+    "href": "qmd/200-git-concepts.html#pull",
+    "title": "2  Git Concepts",
+    "section": "2.5 Pull",
+    "text": "2.5 Pull\nYou update your local copy by pulling new commits from the GitHub repo (also known as syncing)"
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#branches",
+    "href": "qmd/200-git-concepts.html#branches",
+    "title": "2  Git Concepts",
+    "section": "2.6 Branches",
+    "text": "2.6 Branches\nBranches allow for multiple versions of your repo to exist simultaneously. For our purposes, we will ignore them, with the knowledge that everything we do will be on the ‘main’ branch."
   }
 ]

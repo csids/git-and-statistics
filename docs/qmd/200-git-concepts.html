@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Git and Statistics - 1&nbsp; Reference</title>
+<title>Git and Statistics - 2&nbsp; Git Concepts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd/200-git-concepts.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../qmd/100-reference.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +75,7 @@ background: #b8e2f2;
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reference</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git Concepts</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -87,7 +86,7 @@ background: #b8e2f2;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reference</span></h1>
+      <h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git Concepts</span></h1>
                       </div>
   </div>
     
@@ -125,12 +124,12 @@ background: #b8e2f2;
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/100-reference.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reference</span></a>
+  <a href="../qmd/100-reference.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reference</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/200-git-concepts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git Concepts</span></a>
+  <a href="../qmd/200-git-concepts.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git Concepts</span></a>
   </div>
 </li>
     </ul>
@@ -138,7 +137,18 @@ background: #b8e2f2;
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#why-gitgithub" id="toc-why-gitgithub" class="nav-link active" data-scroll-target="#why-gitgithub"><span class="toc-section-number">2.1</span>  Why Git/GitHub?</a></li>
+  <li><a href="#clone" id="toc-clone" class="nav-link" data-scroll-target="#clone"><span class="toc-section-number">2.2</span>  Clone</a></li>
+  <li><a href="#commit" id="toc-commit" class="nav-link" data-scroll-target="#commit"><span class="toc-section-number">2.3</span>  Commit</a></li>
+  <li><a href="#push" id="toc-push" class="nav-link" data-scroll-target="#push"><span class="toc-section-number">2.4</span>  Push</a></li>
+  <li><a href="#pull" id="toc-pull" class="nav-link" data-scroll-target="#pull"><span class="toc-section-number">2.5</span>  Pull</a></li>
+  <li><a href="#branches" id="toc-branches" class="nav-link" data-scroll-target="#branches"><span class="toc-section-number">2.6</span>  Branches</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/csids/git-and-statistics/edit/main/qmd/200-git-concepts.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/csids/git-and-statistics/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -147,20 +157,66 @@ background: #b8e2f2;
 
 
 <p><img src="./resources/git-stages.png" class="img-fluid"></p>
+<section id="why-gitgithub" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="why-gitgithub"><span class="header-section-number">2.1</span> Why Git/GitHub?</h2>
+<p><a href="https://www.github.com">GitHub</a> <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">repos</a> are used to store the code/scripts for projects.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Think of GitHub as a manual snapshot-oriented version of Box/Dropbox that has been designed around collaborative coding.</p>
+</div>
+</div>
+<p>Why do we want to use GitHub instead of Box/Dropbox? Because it is specifically designed for collaborative coding. In more concrete terms, this means:</p>
 <ul>
-<li><a href="https://git-scm.com">Git</a>: A distributed version control system, designed to handle collaborative coding projects. A program that is installed on your computer.</li>
-<li><a href="https://www.github.com">GitHub</a>: A cloud-based hosting service that lets you manage Git repositories.</li>
-<li><a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">Repo/Repository</a>: A top-level directory that has files tracked by Git is syncronized to GitHub. This directory is access controlled.</li>
-<li>Local repo: The folders that are on your computer and are tracked by Git, which you will make changes to.</li>
-<li>Remote repo: The centralized repository</li>
-<li><a href="https://docs.github.com/en/get-started/quickstart/github-glossary#branch">Branch</a>: A parallel version of a repository. “main” is generally the default branch.</li>
-<li><a href="https://docs.github.com/en/get-started/quickstart/github-glossary#commit">Commit</a>: A snapshot of the files at one particular point in time.</li>
-<li><a href="https://docs.github.com/en/get-started/quickstart/github-glossary#pull">Pull</a>: Fetch new changes from the remote repo and apply/merge them to your local repo.</li>
-<li><a href="https://docs.github.com/en/get-started/quickstart/github-glossary#push">Push</a>: Send your commits to the remote repo.</li>
-<li><a href="https://docs.github.com/en/get-started/quickstart/github-glossary#ssh-key">SSH Key</a>: A replacement for a username/password combination, in authenticating you to a server.</li>
+<li>It allows us to easily collaborate on code together.</li>
+<li>Conflicts are handled in a well-defined manner that makes sense for code.
+<ul>
+<li>Box/Dropbox do not handle this as well — they just save both files side-by-side.</li>
+</ul></li>
+<li>It allows for the retrieval of earlier versions of code.</li>
+<li>Can easily check how each file/line of code has developed over time.
+<ul>
+<li>Box/Dropbox have limited versioning options.</li>
+</ul></li>
+<li>It provides a secure remote storage space for the code, in case of laptop theft/damage.
+<ul>
+<li>Same as Box/Dropbox</li>
+</ul></li>
+<li>Access rights can be centrally controlled on a per-project basis.
+<ul>
+<li>If working within a <a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations">GitHub organization</a>, then access rights should be given via <a href="https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams">teams</a>.</li>
+</ul></li>
 </ul>
+</section>
+<section id="clone" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="clone"><span class="header-section-number">2.2</span> Clone</h2>
+<p>The clone command is used to create a copy of a GitHub repo on your local computer. This only has to happen once per repo/computer.</p>
+</section>
+<section id="commit" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="commit"><span class="header-section-number">2.3</span> Commit</h2>
+<p>A commit is a saved snapshot of your repo. You choose to do this when you would like to either update the remote GitHub repo with your local code, or when you would like to sync your local code with updates from the remote GitHub repo.</p>
+</section>
+<section id="push" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="push"><span class="header-section-number">2.4</span> Push</h2>
+<p>You update the GitHub repo by pushing your commit to the repo.</p>
+</section>
+<section id="pull" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="pull"><span class="header-section-number">2.5</span> Pull</h2>
+<p>You update your local copy by pulling new commits from the GitHub repo (also known as syncing)</p>
+</section>
+<section id="branches" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="branches"><span class="header-section-number">2.6</span> Branches</h2>
+<p>Branches allow for multiple versions of your repo to exist simultaneously. For our purposes, we will ignore them, with the knowledge that everything we do will be on the ‘main’ branch.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -298,14 +354,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Git and Statistics</span>
+      <a href="../qmd/100-reference.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reference</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd/200-git-concepts.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git Concepts</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
