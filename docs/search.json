@@ -18,7 +18,7 @@
     "href": "qmd/100-reference.html",
     "title": "1  Reference",
     "section": "",
-    "text": "Note\n\n\n\nThink of GitHub as a manual snapshot-oriented version of a cloud storage service (e.g. Box/Dropbox) that has been designed around collaborative coding.\n\n\n\nWorking directory\n\nThis is a folder on your local file system. It contains the files that you interact with (i.e. edit, read, and run).\n\nGit\n\nA distributed version control system, designed to handle collaborative coding projects. A program that is installed on your computer.\n\nGitHub\n\nA cloud-based hosting service that lets you manage Git repositories.\n\nCommit\n\nA snapshot of the files at one particular point in time.\n\nRepo/Repository\n\nA list of commits. Multiple files and their revision history. A top-level directory that has files monitored by Git is syncronized to GitHub. This directory is access controlled.\n\nLocal repo\n\nThe list of commits on your computer. You can make changes to files, commit them, and then add these commits to your local repo.\n\nRemote repo\n\nThe centralized repository. Access controlled.\n\nBranch\n\nA parallel version of a repository. “main” is generally the default branch.\n\nPull\n\nFetch new commits from the remote repo and apply/merge them to your local repo.\n\nPush\n\nSend your commits to the remote repo.\n\nSSH Key\n\nA replacement for a username/password combination, in authenticating you to a server."
+    "text": "Note\n\n\n\nThink of GitHub as a manual snapshot-oriented version of a cloud storage service (e.g. Box/Dropbox) that has been designed around collaborative coding.\n\n\n\nWorking directory\n\nThis is a folder on your local file system. It contains the files that you interact with (i.e. edit, read, and run).\n\nGit\n\nA distributed version control system, designed to handle collaborative coding projects. A program that is installed on your computer.\n\nGitHub\n\nA cloud-based hosting service that lets you manage Git repositories.\n\nCommit\n\nA snapshot of the files at one particular point in time.\n\nRepo/Repository\n\nA list of commits. Multiple files and their revision history.\n\nLocal repo\n\nThe list of commits on your computer. You can make changes to files, commit them, and then add these commits to your local repo.\n\nRemote repo\n\nThe centralized repository. Access controlled.\n\nBranch\n\nA parallel version of a repository. “main” is generally the default branch.\n\nPull\n\nFetch new commits from the remote repo and apply/merge them to your local repo.\n\nPush\n\nSend your commits to the remote repo.\n\nSSH Key\n\nA replacement for a username/password combination, in authenticating you to a server."
   },
   {
     "objectID": "qmd/200-git-concepts.html#why-gitgithub",
@@ -46,28 +46,28 @@
     "href": "qmd/200-git-concepts.html#commit",
     "title": "2  Git Concepts",
     "section": "2.4 Commit",
-    "text": "2.4 Commit\nA commit is a saved snapshot of your repo at one particular point in time.\nYou may choose to bundle multiple files into a single commit when:\n\nYou would like to update the remote GitHub repo with your local changes. See Section 2.6 for additional discussion.\nWhen you would like to update your local files with changes from the remote GitHub repo. See Section 2.7 for additional discussion.\n\n\n\n\n\n\n\nNote\n\n\n\nRemember that you can only commit files that have been staged (i.e. via the git add command)\n\n\ngit commit -m \"Commit message\""
+    "text": "2.4 Commit\nA commit is a saved snapshot of your repo at one particular point in time.\nYou may choose to bundle multiple files into a single commit when:\n\nYou would like to update the remote GitHub repo with your local changes. See Section 2.7 for additional discussion.\nWhen you would like to update your local files with changes from the remote GitHub repo. See Section 2.6 for additional discussion.\n\n\n\n\n\n\n\nNote\n\n\n\nRemember that you can only commit files that have been staged (i.e. via the git add command)\n\n\ngit commit -m \"Commit message\""
   },
   {
     "objectID": "qmd/200-git-concepts.html#add-staging",
     "href": "qmd/200-git-concepts.html#add-staging",
     "title": "2  Git Concepts",
     "section": "2.5 Add (Staging)",
-    "text": "2.5 Add (Staging)\nThe staging area lies between the working directory and the commit.\nOften,"
-  },
-  {
-    "objectID": "qmd/200-git-concepts.html#sec-push",
-    "href": "qmd/200-git-concepts.html#sec-push",
-    "title": "2  Git Concepts",
-    "section": "2.6 Push",
-    "text": "2.6 Push\nYou update the GitHub repo by pushing your commit to the repo."
+    "text": "2.5 Add (Staging)\nThe staging area lies between the working directory and the commit.\nOften, you will not want to include all uncommitted changes in a single commit. This is why you must selectively choose which uncommitted changes will be included in the next commit via the add command.\ngit add file1 file2 file3 file4"
   },
   {
     "objectID": "qmd/200-git-concepts.html#sec-pull",
     "href": "qmd/200-git-concepts.html#sec-pull",
     "title": "2  Git Concepts",
-    "section": "2.7 Pull",
-    "text": "2.7 Pull\nYou update your local copy by pulling new commits from the GitHub repo (also known as syncing)"
+    "section": "2.6 Pull",
+    "text": "2.6 Pull\nYou update your local copy by pulling new commits from the GitHub repo (also known as syncing)\ngit pull"
+  },
+  {
+    "objectID": "qmd/200-git-concepts.html#sec-push",
+    "href": "qmd/200-git-concepts.html#sec-push",
+    "title": "2  Git Concepts",
+    "section": "2.7 Push",
+    "text": "2.7 Push\nYou update the remote GitHub repo by pushing your local commits.\n\n\n\n\n\n\nNote\n\n\n\nYour local repo will need to be up-to-date before you push. This implies that you have pulled (Section 2.6) the latest commits from the remote repo.\n\n\ngit push"
   },
   {
     "objectID": "qmd/200-git-concepts.html#branches",

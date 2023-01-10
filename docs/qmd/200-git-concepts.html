@@ -209,8 +209,8 @@ background: #b8e2f2;
   <li><a href="#working-directory" id="toc-working-directory" class="nav-link" data-scroll-target="#working-directory"><span class="toc-section-number">2.3</span>  Working Directory</a></li>
   <li><a href="#commit" id="toc-commit" class="nav-link" data-scroll-target="#commit"><span class="toc-section-number">2.4</span>  Commit</a></li>
   <li><a href="#add-staging" id="toc-add-staging" class="nav-link" data-scroll-target="#add-staging"><span class="toc-section-number">2.5</span>  Add (Staging)</a></li>
-  <li><a href="#sec-push" id="toc-sec-push" class="nav-link" data-scroll-target="#sec-push"><span class="toc-section-number">2.6</span>  Push</a></li>
-  <li><a href="#sec-pull" id="toc-sec-pull" class="nav-link" data-scroll-target="#sec-pull"><span class="toc-section-number">2.7</span>  Pull</a></li>
+  <li><a href="#sec-pull" id="toc-sec-pull" class="nav-link" data-scroll-target="#sec-pull"><span class="toc-section-number">2.6</span>  Pull</a></li>
+  <li><a href="#sec-push" id="toc-sec-push" class="nav-link" data-scroll-target="#sec-push"><span class="toc-section-number">2.7</span>  Push</a></li>
   <li><a href="#branches" id="toc-branches" class="nav-link" data-scroll-target="#branches"><span class="toc-section-number">2.8</span>  Branches</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/csids/git-and-statistics/edit/main/qmd/200-git-concepts.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/csids/git-and-statistics/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -277,8 +277,8 @@ Note
 <p>A commit is a saved snapshot of your repo at one particular point in time.</p>
 <p>You may choose to bundle multiple files into a single commit when:</p>
 <ul>
-<li>You would like to update the remote GitHub repo with your local changes. See <a href="#sec-push"><span>Section&nbsp;2.6</span></a> for additional discussion.</li>
-<li>When you would like to update your local files with changes from the remote GitHub repo. See <a href="#sec-pull"><span>Section&nbsp;2.7</span></a> for additional discussion.</li>
+<li>You would like to update the remote GitHub repo with your local changes. See <a href="#sec-push"><span>Section&nbsp;2.7</span></a> for additional discussion.</li>
+<li>When you would like to update your local files with changes from the remote GitHub repo. See <a href="#sec-pull"><span>Section&nbsp;2.6</span></a> for additional discussion.</li>
 </ul>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -298,15 +298,31 @@ Note
 <section id="add-staging" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="add-staging"><span class="header-section-number">2.5</span> Add (Staging)</h2>
 <p>The staging area lies between the working directory and the commit.</p>
-<p>Often,</p>
+<p>Often, you will not want to include all uncommitted changes in a single commit. This is why you must selectively choose which uncommitted changes will be included in the next commit via the <code>add</code> command.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>git add file1 file2 file3 file4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="sec-push" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="sec-push"><span class="header-section-number">2.6</span> Push</h2>
-<p>You update the GitHub repo by pushing your commit to the repo.</p>
-</section>
-<section id="sec-pull" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="sec-pull"><span class="header-section-number">2.7</span> Pull</h2>
+<section id="sec-pull" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="sec-pull"><span class="header-section-number">2.6</span> Pull</h2>
 <p>You update your local copy by pulling new commits from the GitHub repo (also known as syncing)</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>git pull</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="sec-push" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="sec-push"><span class="header-section-number">2.7</span> Push</h2>
+<p>You update the remote GitHub repo by pushing your local commits.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Your local repo will need to be up-to-date before you push. This implies that you have pulled (<a href="#sec-pull"><span>Section&nbsp;2.6</span></a>) the latest commits from the remote repo.</p>
+</div>
+</div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>git push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="branches" class="level2" data-number="2.8">
 <h2 data-number="2.8" class="anchored" data-anchor-id="branches"><span class="header-section-number">2.8</span> Branches</h2>
