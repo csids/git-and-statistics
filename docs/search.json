@@ -46,7 +46,7 @@
     "href": "qmd/200-git-concepts.html#commit",
     "title": "2  Git Concepts",
     "section": "2.4 Commit",
-    "text": "2.4 Commit\nA commit is a saved snapshot of your repo at one particular point in time.\nYou may choose to bundle multiple files into a single commit when:\n\nYou would like to update the remote GitHub repo with your local changes. See Section 2.7 for additional discussion.\nWhen you would like to update your local files with changes from the remote GitHub repo. See Section 2.6 for additional discussion.\n\n\n\n\n\n\n\nNote\n\n\n\nRemember that you can only commit files that have been staged (i.e. via the git add command)\n\n\ngit commit -m \"Commit message\""
+    "text": "2.4 Commit\nA commit is a saved snapshot of your repo at one particular point in time.\nYou may choose to bundle multiple files into a single commit when:\n\nYou would like to update the remote GitHub repo with your local changes. See Section 2.7 for additional discussion.\nWhen you would like to update your local files with changes from the remote GitHub repo. See Section 2.6 for additional discussion.\n\n\n\n\n\n\n\nNote\n\n\n\nRemember that you can only commit changes that have already been staged (i.e. via the git add command)\n\n\ngit commit -m \"Commit message\""
   },
   {
     "objectID": "qmd/200-git-concepts.html#add-staging",
@@ -75,5 +75,12 @@
     "title": "2  Git Concepts",
     "section": "2.8 Branches",
     "text": "2.8 Branches\nBranches allow for multiple versions of your repo to exist simultaneously. For our purposes, we will ignore them, with the knowledge that everything we do will be on the ‘main’ branch."
+  },
+  {
+    "objectID": "qmd/300-starting-with-git.html#create-an-account",
+    "href": "qmd/300-starting-with-git.html#create-an-account",
+    "title": "3  Starting With Git",
+    "section": "3.1 Create an Account",
+    "text": "3.1 Create an Account\nYou will need an account on your remote Git server.\nDo this via: https://github.com/join\n\n\n\n\n\n\nIf your team has a GitHub Organization\n\n\n\nYou will need to provide your team’s administrator with your GitHub username so that they can add you to the GitHub Organization."
   }
 ]
