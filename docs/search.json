@@ -25,7 +25,7 @@
     "href": "qmd/200-git-concepts.html#why-gitgithub",
     "title": "2  Git Concepts",
     "section": "2.1 Why Git/GitHub?",
-    "text": "2.1 Why Git/GitHub?\nGitHub repos are used to store the code/scripts for projects.\nWhy do we want to use GitHub instead of a traditional cloud storage service? Because it is specifically designed for collaborative coding. In more concrete terms, this means:\n\nIt allows us to easily collaborate on code together.\n\nTraditional cloud storage services push all changes instantaneously. This has a tendency to break code.\n\nConflicts are handled in a well-defined manner that makes sense for code.\n\nTraditional cloud storage services do not handle this as well — they just save both files side-by-side.\n\nIt allows for the retrieval of earlier versions of code.\nCan easily check how each file/line of code has developed over time.\n\nTraditional cloud storage services have limited versioning options.\n\nIt provides a secure remote storage space for the code, in case of laptop theft/damage.\n\nSame as traditional cloud storage services.\n\nAccess rights can be centrally controlled on a per-project basis.\n\nIf working within a GitHub organization, then access rights should be given via teams."
+    "text": "2.1 Why Git/GitHub?\nGitHub repos are used to store the code/scripts for projects.\nWhy do we want to use GitHub instead of a traditional cloud storage service? Because it is specifically designed for collaborative coding. In more concrete terms, this means:\n\nIt allows us to easily collaborate on code together.\n\nTraditional cloud storage services push all changes instantaneously. This has a tendency to break code.\nGit has a manual push/pull system that is more appropriate for code.\n\nConflicts are handled in a well-defined manner that makes sense for code.\n\nTraditional cloud storage services do not handle this as well — they just save both files side-by-side.\n\nIt allows for the retrieval of earlier versions of code.\nCan easily check how each file/line of code has developed over time.\n\nTraditional cloud storage services have limited versioning options.\n\nIt provides a secure remote storage space for the code, in case of laptop theft/damage.\n\nSame as traditional cloud storage services.\n\nAccess rights can be centrally controlled on a per-project basis.\n\nIf working within a GitHub organization, then access rights should be given via teams."
   },
   {
     "objectID": "qmd/200-git-concepts.html#clone",
@@ -89,5 +89,19 @@
     "title": "3  Starting With Git",
     "section": "3.2 GitHub Desktop",
     "text": "3.2 GitHub Desktop\n\n3.2.1 Initial Setup\n\nDownload https://desktop.github.com.\nhttps://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github.\n\n\n\n3.2.2 Cloning a repository\n\n\n\n3.2.3 How to push commits to GitHub\n\nhttps://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github\n(You can ignore step 3, “Create Pull Request”, because we are only working on the ‘main’ branch)\n\n\n\n3.2.4 How to pull updates from GitHub:\n\nhttps://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch#pulling-to-your-local-branch-from-the-remote\n(Remember that we are only using the ‘main’ branch)"
+  },
+  {
+    "objectID": "qmd/400-project-organization.html#concepts",
+    "href": "qmd/400-project-organization.html#concepts",
+    "title": "4  Project Organization",
+    "section": "4.1 Concepts",
+    "text": "4.1 Concepts\nMost analyses have three main sections:\n\nCode.\nResults.\nData.\n\nYet each of these sections have extremely different requirements.\nCode should:\n\nBe version controlled (I.e. available on GitHub!).\nBe publicly accessible (sometimes).\nHave 1 analysis pipeline that logically and sequentially details all steps of the data cleaning, analysis, and result generation.\n\nResults should:\n\nBe immediately shared with close collaborators.\nHave each set of results saved and accessible, so that you can see how your results have changed over time (i.e. “if we run the code today, do we get similar results to yesterday?”).\n\nData should:\n\nBe encrypted (if sensitive).\nNot stored on the cloud (if sensitive)."
+  },
+  {
+    "objectID": "qmd/400-project-organization.html#suggested-solutions",
+    "href": "qmd/400-project-organization.html#suggested-solutions",
+    "title": "4  Project Organization",
+    "section": "4.2 Suggested solutions",
+    "text": "4.2 Suggested solutions\nDetermining appropriate solutions for you and your team is an incremental process that requires input from all team members regarding their particular needs. Here are some suggestions that can be used as a starting point.\n\n4.2.1 The minimalist solution\n\n4.2.1.1 Code\nCode will be located in a private GitHub repo, with access primarily controlled via teams, not via individual accounts.\nThis GitHub repo will not contain:\n\nResults.\nData.\n\nThis code will contain an obvious analysis pipeline that logically and sequentially details all steps of the data cleaning, analysis, and result generation.\nFor example:\n\nOne file:\n\nRun.R\n\nMultiple numbered files:\n\n01_clean_data.R\n02_analyze_data.R\n03_create_graphs.R\n\n\nFunctions will be stored in a folder:\n\nfunctions/\n\n\n\n4.2.1.2 Results\nResults will be stored in a traditional cloud storage service.\n\n\n4.2.1.3 Data\nData will be stored locally."
   }
 ]

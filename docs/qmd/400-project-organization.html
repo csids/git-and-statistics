@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Git and Statistics - 1&nbsp; Reference</title>
+<title>Git and Statistics - 4&nbsp; Project Organization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd/200-git-concepts.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../qmd/300-starting-with-git.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +75,7 @@ background: #b8e2f2;
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reference</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Project Organization</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -87,7 +86,7 @@ background: #b8e2f2;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reference</span></h1>
+      <h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Project Organization</span></h1>
                       </div>
   </div>
     
@@ -125,7 +124,7 @@ background: #b8e2f2;
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/100-reference.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reference</span></a>
+  <a href="../qmd/100-reference.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reference</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -140,7 +139,7 @@ background: #b8e2f2;
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/400-project-organization.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Project Organization</span></a>
+  <a href="../qmd/400-project-organization.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Project Organization</span></a>
   </div>
 </li>
     </ul>
@@ -148,7 +147,17 @@ background: #b8e2f2;
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#concepts" id="toc-concepts" class="nav-link active" data-scroll-target="#concepts"><span class="toc-section-number">4.1</span>  Concepts</a></li>
+  <li><a href="#suggested-solutions" id="toc-suggested-solutions" class="nav-link" data-scroll-target="#suggested-solutions"><span class="toc-section-number">4.2</span>  Suggested solutions</a>
+  <ul class="collapse">
+  <li><a href="#the-minimalist-solution" id="toc-the-minimalist-solution" class="nav-link" data-scroll-target="#the-minimalist-solution"><span class="toc-section-number">4.2.1</span>  The minimalist solution</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/csids/git-and-statistics/edit/main/qmd/400-project-organization.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/csids/git-and-statistics/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -156,7 +165,6 @@ background: #b8e2f2;
 
 
 
-<p><img src="./resources/git-stages.png" class="img-fluid"></p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -167,57 +175,79 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Think of GitHub as a manual snapshot-oriented version of a cloud storage service (e.g.&nbsp;Box/Dropbox) that has been designed around collaborative coding.</p>
+<p>Read the [org introduction[(https://www.csids.no/org/articles/org.html) to understand the different requirements for code, results, and data, and suggested solutions regarding layouts.</p>
 </div>
 </div>
-<dl>
-<dt>Working directory</dt>
-<dd>
-This is a folder on your local file system. It contains the files that you interact with (i.e.&nbsp;edit, read, and run).
-</dd>
-<dt><a href="https://git-scm.com">Git</a></dt>
-<dd>
-A distributed version control system, designed to handle collaborative coding projects. A program that is installed on your computer.
-</dd>
-<dt><a href="https://www.github.com">GitHub</a></dt>
-<dd>
-A cloud-based hosting service that lets you manage Git repositories.
-</dd>
-<dt><a href="https://docs.github.com/en/get-started/quickstart/github-glossary#commit">Commit</a></dt>
-<dd>
-A snapshot of the files at one particular point in time.
-</dd>
-<dt><a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">Repo/Repository</a></dt>
-<dd>
-A list of commits. Multiple files and their revision history.
-</dd>
-<dt>Local repo</dt>
-<dd>
-The list of commits on your computer. You can make changes to files, commit them, and then add these commits to your local repo.
-</dd>
-<dt>Remote repo</dt>
-<dd>
-The centralized repository. Access controlled.
-</dd>
-<dt><a href="https://docs.github.com/en/get-started/quickstart/github-glossary#branch">Branch</a></dt>
-<dd>
-A parallel version of a repository. “main” is generally the default branch.
-</dd>
-<dt><a href="https://docs.github.com/en/get-started/quickstart/github-glossary#pull">Pull</a></dt>
-<dd>
-Fetch new commits from the remote repo and apply/merge them to your local repo.
-</dd>
-<dt><a href="https://docs.github.com/en/get-started/quickstart/github-glossary#push">Push</a></dt>
-<dd>
-Send your commits to the remote repo.
-</dd>
-<dt><a href="https://docs.github.com/en/get-started/quickstart/github-glossary#ssh-key">SSH Key</a></dt>
-<dd>
-A replacement for a username/password combination, in authenticating you to a server.
-</dd>
-</dl>
+<section id="concepts" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="concepts"><span class="header-section-number">4.1</span> Concepts</h2>
+<p>Most analyses have three main sections:</p>
+<ul>
+<li>Code.</li>
+<li>Results.</li>
+<li>Data.</li>
+</ul>
+<p>Yet each of these sections have extremely different requirements.</p>
+<p>Code should:</p>
+<ul>
+<li>Be version controlled (I.e. available on GitHub!).</li>
+<li>Be publicly accessible (sometimes).</li>
+<li>Have 1 analysis pipeline that logically and sequentially details all steps of the data cleaning, analysis, and result generation.</li>
+</ul>
+<p>Results should:</p>
+<ul>
+<li>Be immediately shared with close collaborators.</li>
+<li>Have each set of results saved and accessible, so that you can see how your results have changed over time (i.e.&nbsp;“if we run the code today, do we get similar results to yesterday?”).</li>
+</ul>
+<p>Data should:</p>
+<ul>
+<li>Be encrypted (if sensitive).</li>
+<li>Not stored on the cloud (if sensitive).</li>
+</ul>
+</section>
+<section id="suggested-solutions" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="suggested-solutions"><span class="header-section-number">4.2</span> Suggested solutions</h2>
+<p>Determining appropriate solutions for you and your team is an incremental process that requires input from all team members regarding their particular needs. Here are some suggestions that can be used as a starting point.</p>
+<section id="the-minimalist-solution" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="the-minimalist-solution"><span class="header-section-number">4.2.1</span> The minimalist solution</h3>
+<section id="code" class="level4" data-number="4.2.1.1">
+<h4 data-number="4.2.1.1" class="anchored" data-anchor-id="code"><span class="header-section-number">4.2.1.1</span> Code</h4>
+<p>Code will be located in a private GitHub repo, with access primarily controlled via teams, not via individual accounts.</p>
+<p>This GitHub repo will not contain:</p>
+<ul>
+<li>Results.</li>
+<li>Data.</li>
+</ul>
+<p>This code will contain an obvious analysis pipeline that logically and sequentially details all steps of the data cleaning, analysis, and result generation.</p>
+<p>For example:</p>
+<ul>
+<li>One file:
+<ul>
+<li>Run.R</li>
+</ul></li>
+<li>Multiple numbered files:
+<ul>
+<li>01_clean_data.R</li>
+<li>02_analyze_data.R</li>
+<li>03_create_graphs.R</li>
+</ul></li>
+</ul>
+<p>Functions will be stored in a folder:</p>
+<ul>
+<li>functions/</li>
+</ul>
+</section>
+<section id="results" class="level4" data-number="4.2.1.2">
+<h4 data-number="4.2.1.2" class="anchored" data-anchor-id="results"><span class="header-section-number">4.2.1.2</span> Results</h4>
+<p>Results will be stored in a traditional cloud storage service.</p>
+</section>
+<section id="data" class="level4" data-number="4.2.1.3">
+<h4 data-number="4.2.1.3" class="anchored" data-anchor-id="data"><span class="header-section-number">4.2.1.3</span> Data</h4>
+<p>Data will be stored locally.</p>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -355,14 +385,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Git and Statistics</span>
+      <a href="../qmd/300-starting-with-git.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Starting With Git</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd/200-git-concepts.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git Concepts</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
